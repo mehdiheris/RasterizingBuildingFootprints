@@ -1,0 +1,7 @@
+# RasterizingBuildingFootprints
+Converting Vector Shapefiles to Raster Layers (Designed for Microsoft Building Footprints)
+This code is designed to convert building footprint vectros to raster layers. 
+
+The Bing Maps team at Microsoft released a U.S.-wide vector building dataset in 2018, which includes over 125 million building footprints for all 50 states in GeoJSON format. This dataset is extracted from aerial images using deep learning object classification methods. Large-extent modelling (e.g., urban morphological analysis or ecosystem assessment models) or accuracy assessment with vector layers is highly challenging in practice. Although vector layers provide accurate geometries, their use in large-extent geospatial analysis comes at a high computational cost. We used High Performance Computing (HPC) to develop an algorithm that calculates six summary values for each cell in a raster representation of each U.S. state: (1) total footprint coverage, (2) number of unique buildings intersecting each cell, (3) number of building centroids falling inside each cell, and area of the (4) average, (5) smallest, and (6) largest area of buildings that intersect each cell. These values are represented as raster layers with 30m cell size covering the 48 conterminous states, to better support incorporation of building footprint data into large-extent modelling.
+
+To use the code, you can introduce a raster layer to generate the outputs with the same coordinate system and cell alignment. 
