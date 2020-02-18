@@ -17,10 +17,11 @@ import rasterio
 t1=time.clock()
 
 # set the input layers and output locations
-inputRaster=r'I:\Buldings\Rasters\new_results\Utah_avg.tif'
-inputBuildingsShape2=r'I:\Buldings\Shapefiles\UT\Utah_Corrected.shp'
-outputFolder=r'I:\Buldings\Shapefiles\UT'
-#outGridShpe=outputFolder+r'\gridDC.shp'
+
+## We use the extent, projection, and cell alignment of this raster to generate the outputs.
+inputRaster=r''
+inputBuildingsShape2=r''
+outputFolder=r''
 
 
 
@@ -38,8 +39,8 @@ bldgSumDataType='float32'
 bldgMaxDataType='float64'
 bldgMinDataType='float64'
 bldgAvgDataType='float64'
-bldgCntDataType='int16'
-bldgCenteriodCntDataType='int16'
+bldgCntDataType='int32'
+bldgCenteriodCntDataType='int32'
 
 
 
