@@ -83,6 +83,7 @@ for bldg in buildingsPolys:
     bldgBounds=bldg.bounds
     
     # calculate the count of centroid for each cell
+    # to make sure the point is inside the polygon this method can be used instead: bldg.representative_point()
     centroidX=(bldg.centroid.coords)[0][0]
     centroidY=(bldg.centroid.coords)[0][1]
     col   = int((centroidX - leftX)/cellSize)
